@@ -1,0 +1,2902 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset='UTF-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+		<link href='http://cdn.rawgit.com/anshooarora/extentreports-java/bee7a4abdc590e21eec8618a90c81ff4d16e500a/dist/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>Extent</title>
+
+	<style type='text/css'>
+			
+
+
+		
+	</style>
+</head>
+
+	<body class='extent dark default hide-overflow bdd-report'>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo blue darken-3">Extent</a>
+
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1)" view='testrunner-logs-view'><i class='material-icons'>note</i></a></li>
+		</ul>
+
+		<!-- report name -->
+		<span class='report-name'>GreenDMS - Cucumber Report</span>
+		
+		<!-- report headline -->
+		<span class='report-headline'></span>
+
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<li>
+                <a href='#!'>
+                    <span class='label suite-start-time blue darken-3'>Jun 28, 2021 07:00:05 PM</span>
+				</a>
+			</li>
+			<li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>v3.0.7</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+		<!-- container -->
+		<div class='container'>
+
+<div id='test-view' class='view'>
+				
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+
+			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>@AddDocuments</a></li>
+					<li><a href='#'>@selectedScenario</a></li>
+					<li><a href='#'>@DashboardFeature</a></li>
+					<li><a href='#'>@Folder</a></li>
+					<li><a href='#'>@FolderSpecific</a></li>
+					<li><a href='#'>@IndexGroup</a></li>
+					<li><a href='#'>@LoginFeature</a></li>
+					<li><a href='#'>@MyQueue</a></li>
+					<li><a href='#'>@reports</a></li>
+					<li><a href='#'>@Settings</a></li>
+					<li><a href='#'>@Teams</a></li>
+					<li><a href='#'>@Users</a></li>
+					<li><a href='#'>@UsersSelected</a></li>
+					<li><a href='#'>@Workflow</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
+			<!-- category toggle -->
+
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+					<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+					<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m4 l4 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Features</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='9.091%'><span class='strong'>1</span> feature(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='90.909%'>10</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m4 l4 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Scenarios</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='5%'><span class='strong'>1</span> scenario(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='95%'>19</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m4 l4 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='85.816%'><span class='strong'>121</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='13.475%'>19</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0.709%'>1</span> others
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Features</h5>
+			<ul id='test-collection' class='test-collection'>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>Testing Add Documents Feature</span>
+						<span class='test-time'>Jun 28, 2021 07:00:05 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='2' status='fail'>
+	<span class='duration right label'>0h 1m 46s+412ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Adding Single Document to Unassigned Folder</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='3' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given Open Browser</span>
+				<div class='pre'>Browser opened</div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='4' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Go to GreenDMS application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='5' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Login to the application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='6' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Moving to Add Documents page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='7' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Add single document to Unassigned Folder</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='8' class='node and fail' status='fail'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Logout the application</span>
+				<div class='pre'><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(AddDocuments.feature:11)
+</textarea></div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='9' status='fail'>
+	<span class='duration right label'>0h 1m 26s+991ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Adding Single Document to MyDocuments Folder</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='10' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given Open Browser</span>
+				<div class='pre'>Browser opened</div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='11' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Go to GreenDMS application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='12' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Login to the application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='13' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Moving to Add Documents page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='14' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Add single document to My Documents Folder</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='15' class='node and fail' status='fail'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Logout the application</span>
+				<div class='pre'><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(AddDocuments.feature:20)
+</textarea></div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='16' status='fail'>
+	<div class='category-list'>
+		<span class='category label white-text'>@selectedScenario</span>
+	</div>
+	<span class='duration right label'>0h 1m 27s+152ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Adding Single Document to DMS Folder</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='17' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given Open Browser</span>
+				<div class='pre'>Browser opened</div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='18' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Go to GreenDMS application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='19' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Login to the application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='20' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Moving to Add Documents page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='21' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Add single document to DMS Folder</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='22' class='node and fail' status='fail'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Logout the application</span>
+				<div class='pre'><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(AddDocuments.feature:29)
+</textarea></div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='23' status='fail'>
+	<span class='duration right label'>0h 1m 25s+887ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Adding Multiple Document to Unassigned folder</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='24' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given Open Browser</span>
+				<div class='pre'>Browser opened</div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='25' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Go to GreenDMS application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='26' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Login to the application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='27' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Moving to Add Documents page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='28' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Add multiple documents to Unassigned Folder</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='29' class='node and fail' status='fail'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Logout the application</span>
+				<div class='pre'><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(AddDocuments.feature:38)
+</textarea></div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='30'>
+					<div class='test-heading'>
+						<span class='test-name'>Dashboard Feature</span>
+						<span class='test-time'>Jun 28, 2021 07:06:12 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='31' status='pass'>
+	<span class='duration right label'>0h 0m 21s+138ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Check Dashboard</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='32' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given Open Browser</span>
+				<div class='pre'>Browser opened</div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='33' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Go to GreenDMS application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='34' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Checking loging page title is "GREENDMS - 4.0.0.19"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='35' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Login to the application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='36'>
+					<div class='test-heading'>
+						<span class='test-name'>Testing Folders Feature</span>
+						<span class='test-time'>Jun 28, 2021 07:06:33 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='37' status='fail'>
+	<span class='duration right label'>0h 1m 11s+410ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Creating Document folder inside Repository</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='38' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given Open Browser</span>
+				<div class='pre'>Browser opened</div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='39' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Go to GreenDMS application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='40' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Login to the application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='41' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Moving to Folder page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='42' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Create Document Folder inside "Repository"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='43' class='node and fail' status='fail'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Logout the application</span>
+				<div class='pre'><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(Folder.feature:11)
+</textarea></div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='44' status='fail'>
+	<span class='duration right label'>0h 1m 24s+321ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Creating Parent Folder</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='45' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given Open Browser</span>
+				<div class='pre'>Browser opened</div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='46' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Go to GreenDMS application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='47' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Login to the application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='48' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Moving to Folder page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='49' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Create Parent Folder</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='50' class='node and fail' status='fail'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Logout the application</span>
+				<div class='pre'><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(Folder.feature:19)
+</textarea></div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='51' status='fail'>
+	<div class='category-list'>
+		<span class='category label white-text'>@FolderSpecific</span>
+	</div>
+	<span class='duration right label'>0h 1m 24s+638ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Creating Document Folder inside Parent Folder</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='52' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given Open Browser</span>
+				<div class='pre'>Browser opened</div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='53' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Go to GreenDMS application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='54' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Login to the application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='55' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Moving to Folder page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='56' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Create Document Folder inside "Parent Folder"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='57' class='node and fail' status='fail'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Logout the application</span>
+				<div class='pre'><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(Folder.feature:28)
+</textarea></div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='58'>
+					<div class='test-heading'>
+						<span class='test-name'>Index Group Feature</span>
+						<span class='test-time'>Jun 28, 2021 07:10:33 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='59' status='fail'>
+	<span class='duration right label'>0h 3m 59s+947ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Creating Index Group</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='60' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given Open Browser</span>
+				<div class='pre'>Browser opened</div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='61' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Go to GreenDMS application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='62' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Login to the application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='63' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Moving to Index Group page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='64' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Click New button to create new index group</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='65' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Type Index Name</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='66' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Save and provide necessary details</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='67' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Save and verify created Index Group</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='68' class='node and fail' status='fail'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Logout the application</span>
+				<div class='pre'><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(IndexGroup.feature:13)
+</textarea></div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='69'>
+					<div class='test-heading'>
+						<span class='test-name'>Login Feature</span>
+						<span class='test-time'>Jun 28, 2021 07:14:33 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='70' status='fail'>
+	<span class='duration right label'>0h 1m 7s+20ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Check Login Functionality</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='71' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given Open Browser</span>
+				<div class='pre'>Browser opened</div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='72' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Go to GreenDMS application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='73' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Checking loging page title is "GREENDMS - 4.0.0.19"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='74' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Login to the application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='75' class='node and fail' status='fail'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Logout the application</span>
+				<div class='pre'><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(Login.feature:9)
+</textarea></div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='76'>
+					<div class='test-heading'>
+						<span class='test-name'>MyQueue Feature</span>
+						<span class='test-time'>Jun 28, 2021 07:15:40 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenariooutline node' test-id='77' status='fail'>
+	<span class='duration right label'>0h 2m 22s+354ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Decline And Complete Documents</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='78' class='node scenario fail' status='fail'>
+			<div class='category-list'>
+				<span class='category label white-text'>@MyQueue</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Decline And Complete Documents</span>
+			
+				<ul class='steps'>
+					<li test-id='79' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given Open Browser</span>
+							<div class='pre'>Browser opened</div>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='80' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Go to GreenDMS application</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='81' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Login to the application</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='82' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Enter into MyQueue page</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='83' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When Select "In Progress" from the dropdown</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='84' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Enter inside any one from the displayed list</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='85' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Scroll down to the Status dropdown</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='86' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And Select "Declined" from the dropdown</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='87' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Save to come to MyQueue page</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='88' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And Select "Declined" from the dropdown</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='89' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And Verify the status of the changed document</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='90' class='node and fail' status='fail'><b>And</b>
+						<span class="bdd-step-name">And Logout the application</span>
+							<div class='pre'><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(MyQueue.feature:16)
+</textarea></div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='91' class='node scenario fail' status='fail'>
+			<div class='category-list'>
+				<span class='category label white-text'>@MyQueue</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Decline And Complete Documents</span>
+			
+				<ul class='steps'>
+					<li test-id='92' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given Open Browser</span>
+							<div class='pre'>Browser opened</div>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='93' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Go to GreenDMS application</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='94' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Login to the application</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='95' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Enter into MyQueue page</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='96' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When Select "In Progress" from the dropdown</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='97' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Enter inside any one from the displayed list</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='98' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Scroll down to the Status dropdown</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='99' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And Select "Completed" from the dropdown</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='100' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Save to come to MyQueue page</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='101' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And Select "Completed" from the dropdown</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='102' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And Verify the status of the changed document</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='103' class='node and fail' status='fail'><b>And</b>
+						<span class="bdd-step-name">And Logout the application</span>
+							<div class='pre'><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(MyQueue.feature:16)
+</textarea></div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='104'>
+					<div class='test-heading'>
+						<span class='test-name'>Testing Reports Feature</span>
+						<span class='test-time'>Jun 28, 2021 07:18:02 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenariooutline node' test-id='105' status='fail'>
+	<span class='duration right label'>0h 2m 32s+425ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Generate all Reports One By One</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='106' class='node scenario fail' status='fail'>
+			<div class='category-list'>
+				<span class='category label white-text'>@reports</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Generate all Reports One By One</span>
+			
+				<ul class='steps'>
+					<li test-id='107' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given Open Browser</span>
+							<div class='pre'>Browser opened</div>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='108' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Go to GreenDMS application</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='109' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Login to the application</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='110' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Moving to Reports page</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='111' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Select "Access History" from dropdown</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='112' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Generate report by filling necessary details</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='113' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And Verify report loaded in grid</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='114' class='node and fail' status='fail'><b>And</b>
+						<span class="bdd-step-name">And Logout the application</span>
+							<div class='pre'><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(Reports.feature:12)
+</textarea></div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='115' class='node scenario fail' status='fail'>
+			<div class='category-list'>
+				<span class='category label white-text'>@reports</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Generate all Reports One By One</span>
+			
+				<ul class='steps'>
+					<li test-id='116' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given Open Browser</span>
+							<div class='pre'>Browser opened</div>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='117' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Go to GreenDMS application</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='118' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Login to the application</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='119' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Moving to Reports page</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='120' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Select "Document Folder Access History" from dropdown</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='121' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Generate report by filling necessary details</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='122' class='node and fail' status='fail'><b>And</b>
+						<span class="bdd-step-name">And Verify report loaded in grid</span>
+							<div class='pre'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.dms.stepDefinitions.ReportsStepDef.verifyReportLoadedInGrid(ReportsStepDef.java:47)
+	at ?.And Verify report loaded in grid(Reports.feature:11)
+</pre></div>
+					</li>
+					<li test-id='123' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And Logout the application</span>
+							<div class='pre'>skipped</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='124' status='fail'>
+	<span class='duration right label'>0h 1m 1s+160ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Generate all Reports One By One</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='125' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given Open Browser</span>
+				<div class='pre'>Browser opened</div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='126' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Go to GreenDMS application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='127' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Login to the application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='128' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Moving to Reports page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='129' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Select Bulk Job from dropdown</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='130' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Verify report loaded in grid</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='131' class='node and fail' status='fail'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Logout the application</span>
+				<div class='pre'><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(Reports.feature:27)
+</textarea></div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='132'>
+					<div class='test-heading'>
+						<span class='test-name'>Settings Feature</span>
+						<span class='test-time'>Jun 28, 2021 07:21:36 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='133' status='fail'>
+	<span class='duration right label'>0h 1m 3s+527ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Adding User</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='134' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given Open Browser</span>
+				<div class='pre'>Browser opened</div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='135' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Go to GreenDMS application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='136' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Login to the application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='137' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Moving to General Setting page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='138' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Fill all the Setting details and Update</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='139' class='node and fail' status='fail'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Logout the application</span>
+				<div class='pre'><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(Settings.feature:10)
+</textarea></div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='140'>
+					<div class='test-heading'>
+						<span class='test-name'>Teams Feature</span>
+						<span class='test-time'>Jun 28, 2021 07:22:40 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='141' status='fail'>
+	<span class='duration right label'>0h 1m 3s+292ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Adding User</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='142' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given Open Browser</span>
+				<div class='pre'>Browser opened</div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='143' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Go to GreenDMS application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='144' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Login to the application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='145' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Moving to Add Teams page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='146' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Fill Team details and Submit</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='147' class='node and fail' status='fail'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Logout the application</span>
+				<div class='pre'><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(Teams.feature:10)
+</textarea></div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='148'>
+					<div class='test-heading'>
+						<span class='test-name'>Users Feature</span>
+						<span class='test-time'>Jun 28, 2021 07:23:43 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='149' status='fail'>
+	<span class='duration right label'>0h 1m 4s+332ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Adding User</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='150' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given Open Browser</span>
+				<div class='pre'>Browser opened</div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='151' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Go to GreenDMS application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='152' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Login to the application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='153' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Moving to Add Users page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='154' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Fill all the details and Submit</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='155' class='node and fail' status='fail'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Logout the application</span>
+				<div class='pre'><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(Users.feature:10)
+</textarea></div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='156' status='fail'>
+	<div class='category-list'>
+		<span class='category label white-text'>@UsersSelected</span>
+	</div>
+	<span class='duration right label'>0h 1m 4s+144ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Testing Department Page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='157' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given Open Browser</span>
+				<div class='pre'>Browser opened</div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='158' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Go to GreenDMS application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='159' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Login to the application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='160' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Moving to Department User page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='161' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Fill Department Name and Submit</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='162' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Delete the created Department</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='163' class='node and fail' status='fail'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Logout the application</span>
+				<div class='pre'><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(Users.feature:20)
+</textarea></div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='164'>
+					<div class='test-heading'>
+						<span class='test-name'>Testng Workflow Feature</span>
+						<span class='test-time'>Jun 28, 2021 07:25:51 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='165' status='fail'>
+	<span class='duration right label'>0h 1m 4s+590ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Creating Workflow</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='166' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given Open Browser</span>
+				<div class='pre'>Browser opened</div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='167' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Go to GreenDMS application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='168' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Login to the application</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='169' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Enter into Workflow master page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='170' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Enter plus icon to create new Workflow</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='171' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Enter workflow name</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='172' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Fill step details</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='173' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Save workflow and verify</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='174' class='node and fail' status='fail'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Logout the application</span>
+				<div class='pre'><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(Workflow.feature:13)
+</textarea></div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+
+</div>
+<!-- test view -->
+<div id='category-view' class='view hide'>
+
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+				
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Categories</h3>
+			<ul id='category-collection' class='category-collection'>
+				
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@AddDocuments</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 28, 2021 07:00:05 PM</td>
+										<td class='linked' test-id='1'>Testing Add Documents Feature</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@selectedScenario</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 28, 2021 07:03:18 PM</td>
+										<td class='linked' test-id='16'>Testing Add Documents Feature.Adding Single Document to DMS Folder</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@DashboardFeature</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 28, 2021 07:06:12 PM</td>
+										<td class='linked' test-id='30'>Dashboard Feature</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Folder</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 28, 2021 07:06:33 PM</td>
+										<td class='linked' test-id='36'>Testing Folders Feature</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@FolderSpecific</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 28, 2021 07:09:08 PM</td>
+										<td class='linked' test-id='51'>Testing Folders Feature.Creating Document Folder inside Parent Folder</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@IndexGroup</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 28, 2021 07:10:33 PM</td>
+										<td class='linked' test-id='58'>Index Group Feature</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@LoginFeature</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 28, 2021 07:14:33 PM</td>
+										<td class='linked' test-id='69'>Login Feature</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@MyQueue</span>
+						<span class='category-status right'>
+							<span class='label fail'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 3</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 28, 2021 07:15:40 PM</td>
+										<td class='linked' test-id='76'>MyQueue Feature</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Jun 28, 2021 07:15:40 PM</td>
+										<td class='linked' test-id='78'>MyQueue Feature.Decline And Complete Documents.Decline And Complete Documents</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Jun 28, 2021 07:16:51 PM</td>
+										<td class='linked' test-id='91'>MyQueue Feature.Decline And Complete Documents.Decline And Complete Documents</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@reports</span>
+						<span class='category-status right'>
+							<span class='label fail'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 3</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 28, 2021 07:18:02 PM</td>
+										<td class='linked' test-id='104'>Testing Reports Feature</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Jun 28, 2021 07:18:02 PM</td>
+										<td class='linked' test-id='106'>Testing Reports Feature.Generate all Reports One By One.Generate all Reports One By One</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Jun 28, 2021 07:19:09 PM</td>
+										<td class='linked' test-id='115'>Testing Reports Feature.Generate all Reports One By One.Generate all Reports One By One</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Settings</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 28, 2021 07:21:36 PM</td>
+										<td class='linked' test-id='132'>Settings Feature</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Teams</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 28, 2021 07:22:40 PM</td>
+										<td class='linked' test-id='140'>Teams Feature</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Users</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 28, 2021 07:23:43 PM</td>
+										<td class='linked' test-id='148'>Users Feature</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@UsersSelected</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 28, 2021 07:24:47 PM</td>
+										<td class='linked' test-id='156'>Users Feature.Testing Department Page</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Workflow</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 28, 2021 07:25:51 PM</td>
+										<td class='linked' test-id='164'>Testng Workflow Feature</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- category view -->
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>org.openqa.selenium.TimeoutException</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>18</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Jun 28, 2021 07:01:06 PM</td>
+                                                        <td class='linked' test-id='8'>Testing Add Documents Feature.Adding Single Document to Unassigned Folder.And Logout the application</td>
+                                                        <td><pre><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(AddDocuments.feature:11)
+</textarea></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jun 28, 2021 07:02:33 PM</td>
+                                                        <td class='linked' test-id='15'>Testing Add Documents Feature.Adding Single Document to MyDocuments Folder.And Logout the application</td>
+                                                        <td><pre><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(AddDocuments.feature:20)
+</textarea></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jun 28, 2021 07:03:59 PM</td>
+                                                        <td class='linked' test-id='22'>Testing Add Documents Feature.Adding Single Document to DMS Folder.And Logout the application</td>
+                                                        <td><pre><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(AddDocuments.feature:29)
+</textarea></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jun 28, 2021 07:05:25 PM</td>
+                                                        <td class='linked' test-id='29'>Testing Add Documents Feature.Adding Multiple Document to Unassigned folder.And Logout the application</td>
+                                                        <td><pre><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(AddDocuments.feature:38)
+</textarea></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jun 28, 2021 07:07:04 PM</td>
+                                                        <td class='linked' test-id='43'>Testing Folders Feature.Creating Document folder inside Repository.And Logout the application</td>
+                                                        <td><pre><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(Folder.feature:11)
+</textarea></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jun 28, 2021 07:08:15 PM</td>
+                                                        <td class='linked' test-id='50'>Testing Folders Feature.Creating Parent Folder.And Logout the application</td>
+                                                        <td><pre><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(Folder.feature:19)
+</textarea></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jun 28, 2021 07:09:40 PM</td>
+                                                        <td class='linked' test-id='57'>Testing Folders Feature.Creating Document Folder inside Parent Folder.And Logout the application</td>
+                                                        <td><pre><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(Folder.feature:28)
+</textarea></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jun 28, 2021 07:14:02 PM</td>
+                                                        <td class='linked' test-id='68'>Index Group Feature.Creating Index Group.And Logout the application</td>
+                                                        <td><pre><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(IndexGroup.feature:13)
+</textarea></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jun 28, 2021 07:15:09 PM</td>
+                                                        <td class='linked' test-id='75'>Login Feature.Check Login Functionality.And Logout the application</td>
+                                                        <td><pre><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(Login.feature:9)
+</textarea></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jun 28, 2021 07:16:20 PM</td>
+                                                        <td class='linked' test-id='90'>MyQueue Feature.Decline And Complete Documents.Decline And Complete Documents.And Logout the application</td>
+                                                        <td><pre><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(MyQueue.feature:16)
+</textarea></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jun 28, 2021 07:17:31 PM</td>
+                                                        <td class='linked' test-id='103'>MyQueue Feature.Decline And Complete Documents.Decline And Complete Documents.And Logout the application</td>
+                                                        <td><pre><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(MyQueue.feature:16)
+</textarea></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jun 28, 2021 07:18:38 PM</td>
+                                                        <td class='linked' test-id='114'>Testing Reports Feature.Generate all Reports One By One.Generate all Reports One By One.And Logout the application</td>
+                                                        <td><pre><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(Reports.feature:12)
+</textarea></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jun 28, 2021 07:21:05 PM</td>
+                                                        <td class='linked' test-id='131'>Testing Reports Feature.Generate all Reports One By One.And Logout the application</td>
+                                                        <td><pre><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(Reports.feature:27)
+</textarea></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jun 28, 2021 07:22:08 PM</td>
+                                                        <td class='linked' test-id='139'>Settings Feature.Adding User.And Logout the application</td>
+                                                        <td><pre><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(Settings.feature:10)
+</textarea></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jun 28, 2021 07:23:12 PM</td>
+                                                        <td class='linked' test-id='147'>Teams Feature.Adding User.And Logout the application</td>
+                                                        <td><pre><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(Teams.feature:10)
+</textarea></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jun 28, 2021 07:24:16 PM</td>
+                                                        <td class='linked' test-id='155'>Users Feature.Adding User.And Logout the application</td>
+                                                        <td><pre><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(Users.feature:10)
+</textarea></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jun 28, 2021 07:25:19 PM</td>
+                                                        <td class='linked' test-id='163'>Users Feature.Testing Department Page.And Logout the application</td>
+                                                        <td><pre><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(Users.feature:20)
+</textarea></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jun 28, 2021 07:26:25 PM</td>
+                                                        <td class='linked' test-id='174'>Testng Workflow Feature.Creating Workflow.And Logout the application</td>
+                                                        <td><pre><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.dms.base.TestBase.logout(TestBase.java:92)
+	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+	at ?.And Logout the application(Workflow.feature:13)
+</textarea></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>java.lang.AssertionError</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Jun 28, 2021 07:20:05 PM</td>
+                                                        <td class='linked' test-id='122'>Testing Reports Feature.Generate all Reports One By One.Generate all Reports One By One.And Verify report loaded in grid</td>
+                                                        <td><pre><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.dms.stepDefinitions.ReportsStepDef.verifyReportLoadedInGrid(ReportsStepDef.java:47)
+	at ?.And Verify report loaded in grid(Reports.feature:11)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
+<!-- exception view -->
+<div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Features
+					<div class='panel-lead'>11</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Scenarios
+					<div class='panel-lead'>20</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>141</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Jun 28, 2021 07:00:05 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Jun 28, 2021 07:26:56 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>1,611,399ms</div>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel dashboard-environment'>
+					<span class='right label cyan white-text'>Environment</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Value</th>
+						</tr>
+							<tr>
+								<td>User Name</td>
+								<td>Administrator</td>
+							</tr>
+							<tr>
+								<td>Application Name</td>
+								<td>GreenDMS</td>
+							</tr>
+							<tr>
+								<td>Operating System Type</td>
+								<td>Windows 10</td>
+							</tr>
+							<tr>
+								<td>Environment</td>
+								<td>QA</td>
+							</tr>
+					</table>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel dashboard-categories'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Others</th>
+						</tr>
+						<tr>
+							<td>@AddDocuments</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@selectedScenario</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@DashboardFeature</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@Folder</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@FolderSpecific</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@IndexGroup</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@LoginFeature</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@MyQueue</td>
+							<td>0</td>
+							<td>3</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@reports</td>
+							<td>0</td>
+							<td>3</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@Settings</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@Teams</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@Users</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@UsersSelected</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@Workflow</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<div id='testrunner-logs-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>TestRunner Logs</h5>
+		
+		<div class='card-panel'>
+				Test Execution Cucumber Report
+		</div>
+	</div>
+</div>
+<!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+
+		<script>
+			var statusGroup = {
+				passParent: 1,
+				failParent: 10,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 10,
+				
+				passChild: 1,
+				failChild: 19,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				exceptionsChild: 19,
+				
+				passGrandChild: 121,
+				failGrandChild: 19,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 1,
+				infoGrandChild: 0,
+				exceptionsGrandChild: 20,
+			};
+		</script>
+		
+			<script src='http://cdn.rawgit.com/anshooarora/extentreports-java/fca20fb7653aade98810546ab96a2a4360e3e712/dist/js/extent.js' type='text/javascript'></script>
+		
+		
+ 		<script type='text/javascript'>
+ 			
+
+
+$(document).ready(function() {
+$( "canvas" ).slideUp( 800 );
+$( "canvas" ).slideDown( 600 );
+});
+
+
+
+
+		
+ 		</script>
+	</body>
+	
+</html>

@@ -1,0 +1,15 @@
+com\dms\stepDefinitions\BulkJobStepDef.class
+com\dms\stepDefinitions\WorkFlowStepDef.class
+com\dms\stepDefinitions\AddDocumentsStepDef.class
+com\dms\runner\TestRunner.class
+com\dms\stepDefinitions\FolderStepDef.class
+com\dms\stepDefinitions\RemindersStepDef.class
+com\dms\stepDefinitions\UsersStepDef.class
+com\dms\stepDefinitions\SettingsStepDef.class
+com\dms\stepDefinitions\IndexGroupStepDef.class
+com\dms\stepDefinitions\TeamsStepDef.class
+com\dms\stepDefinitions\DashboardStepDef.class
+com\dms\stepDefinitions\LoginStepDef.class
+com\dms\stepDefinitions\ReportsStepDef.class
+com\dms\stepDefinitions\MyQueueStepDef.class
+com\dms\stepDefinitions\RepositoryStepDef.class

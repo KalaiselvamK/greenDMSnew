@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="5558" started-at="2021-06-28T18:47:55 IST" finished-at="2021-06-28T18:48:00 IST">
+    <groups>
+      <group name="cucumber scenarios">
+        <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.dms.runner.TestRunner@3d121db3]" name="feature" class="com.dms.runner.TestRunner"/>
+      </group> <!-- cucumber scenarios -->
+    </groups>
+    <test name="Default test" duration-ms="5558" started-at="2021-06-28T18:47:55 IST" finished-at="2021-06-28T18:48:00 IST">
+      <class name="com.dms.runner.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.dms.runner.TestRunner@3d121db3]" name="setUpClass" is-config="true" duration-ms="1012" started-at="2021-06-28T18:47:55 IST" finished-at="2021-06-28T18:47:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.dms.runner.TestRunner@3d121db3]" name="feature" duration-ms="869" started-at="2021-06-28T18:47:56 IST" description="Runs Cucumber Scenarios" data-provider="features" finished-at="2021-06-28T18:47:57 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Testing Add Documents Feature]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.dms.runner.TestRunner@3d121db3]" name="feature" duration-ms="44" started-at="2021-06-28T18:47:57 IST" description="Runs Cucumber Scenarios" data-provider="features" finished-at="2021-06-28T18:47:57 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dashboard Feature]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.dms.runner.TestRunner@3d121db3]" name="feature" duration-ms="240" started-at="2021-06-28T18:47:57 IST" description="Runs Cucumber Scenarios" data-provider="features" finished-at="2021-06-28T18:47:57 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Testing Folders Feature]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.dms.runner.TestRunner@3d121db3]" name="feature" duration-ms="96" started-at="2021-06-28T18:47:57 IST" description="Runs Cucumber Scenarios" data-provider="features" finished-at="2021-06-28T18:47:57 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Index Group Feature]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.dms.runner.TestRunner@3d121db3]" name="feature" duration-ms="141" started-at="2021-06-28T18:47:57 IST" description="Runs Cucumber Scenarios" data-provider="features" finished-at="2021-06-28T18:47:57 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Login Feature]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.dms.runner.TestRunner@3d121db3]" name="feature" duration-ms="266" started-at="2021-06-28T18:47:57 IST" description="Runs Cucumber Scenarios" data-provider="features" finished-at="2021-06-28T18:47:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MyQueue Feature]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.dms.runner.TestRunner@3d121db3]" name="feature" duration-ms="176" started-at="2021-06-28T18:47:58 IST" description="Runs Cucumber Scenarios" data-provider="features" finished-at="2021-06-28T18:47:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Testing Reports Feature]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.dms.runner.TestRunner@3d121db3]" name="feature" duration-ms="47" started-at="2021-06-28T18:47:58 IST" description="Runs Cucumber Scenarios" data-provider="features" finished-at="2021-06-28T18:47:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Settings Feature]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.dms.runner.TestRunner@3d121db3]" name="feature" duration-ms="56" started-at="2021-06-28T18:47:58 IST" description="Runs Cucumber Scenarios" data-provider="features" finished-at="2021-06-28T18:47:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Teams Feature]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.dms.runner.TestRunner@3d121db3]" name="feature" duration-ms="77" started-at="2021-06-28T18:47:58 IST" description="Runs Cucumber Scenarios" data-provider="features" finished-at="2021-06-28T18:47:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Users Feature]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.dms.runner.TestRunner@3d121db3]" name="feature" duration-ms="34" started-at="2021-06-28T18:47:58 IST" description="Runs Cucumber Scenarios" data-provider="features" finished-at="2021-06-28T18:47:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Testng Workflow Feature]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.dms.runner.TestRunner@3d121db3]" name="tearDownClass" is-config="true" duration-ms="1896" started-at="2021-06-28T18:47:58 IST" finished-at="2021-06-28T18:48:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.dms.runner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
