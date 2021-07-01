@@ -10,7 +10,7 @@
 		</listener>
 	</listeners>
 
-	<test name="Test" group-by-instances="true">
+	<test name="Test" group-by-instances="true" parallel="methods">
 		<classes>
 			<class name="com.dms.runner.TestRunner" />
 		</classes>
