@@ -54,44 +54,37 @@ formatter.match({
   "location": "LoginStepDef.openGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 21327614200,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.goToGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 1464408700,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.loginToTheApplication()"
 });
 formatter.result({
-  "duration": 18859438600,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "AddDocumentsStepDef.movingToAddDocumentsPage()"
 });
 formatter.result({
-  "duration": 17903319500,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "AddDocumentsStepDef.addSingleDocumentToUnassignedFolder()"
 });
 formatter.result({
-  "duration": 915213700,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.logoutTheApplication()"
 });
 formatter.result({
-  "duration": 45708109700,
-  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(AddDocuments.feature:11)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.scenario({
   "line": 14,
@@ -135,44 +128,37 @@ formatter.match({
   "location": "LoginStepDef.openGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 1271514300,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.goToGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 469943500,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.loginToTheApplication()"
 });
 formatter.result({
-  "duration": 20998274000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "AddDocumentsStepDef.movingToAddDocumentsPage()"
 });
 formatter.result({
-  "duration": 16906336700,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "AddDocumentsStepDef.addSingleDocumentToMyDocumentsFolder()"
 });
 formatter.result({
-  "duration": 1541050400,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.logoutTheApplication()"
 });
 formatter.result({
-  "duration": 45751895300,
-  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(AddDocuments.feature:20)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.scenario({
   "line": 23,
@@ -222,44 +208,37 @@ formatter.match({
   "location": "LoginStepDef.openGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 162397100,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.goToGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 506566000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.loginToTheApplication()"
 });
 formatter.result({
-  "duration": 20338513100,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "AddDocumentsStepDef.movingToAddDocumentsPage()"
 });
 formatter.result({
-  "duration": 16602723300,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "AddDocumentsStepDef.addSingleDocumentToDMSFolder()"
 });
 formatter.result({
-  "duration": 2940024500,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.logoutTheApplication()"
 });
 formatter.result({
-  "duration": 46584320100,
-  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(AddDocuments.feature:29)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.scenario({
   "line": 32,
@@ -303,44 +282,37 @@ formatter.match({
   "location": "LoginStepDef.openGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 191023000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.goToGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 593206400,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.loginToTheApplication()"
 });
 formatter.result({
-  "duration": 20751151800,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "AddDocumentsStepDef.movingToAddDocumentsPage()"
 });
 formatter.result({
-  "duration": 17239096600,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "AddDocumentsStepDef.addMultipleDocumentToUnassignedFolder()"
 });
 formatter.result({
-  "duration": 1039528900,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.logoutTheApplication()"
 });
 formatter.result({
-  "duration": 46048576800,
-  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(AddDocuments.feature:38)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.uri("Dashboard.feature");
 formatter.feature({
@@ -388,15 +360,13 @@ formatter.match({
   "location": "LoginStepDef.openGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 225633400,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.goToGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 370234100,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -408,15 +378,13 @@ formatter.match({
   "location": "LoginStepDef.checkingLogingPageTitleIs(String)"
 });
 formatter.result({
-  "duration": 29815400,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.loginToTheApplication()"
 });
 formatter.result({
-  "duration": 20497437500,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.uri("Folder.feature");
 formatter.feature({
@@ -474,29 +442,25 @@ formatter.match({
   "location": "LoginStepDef.openGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 115100600,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.goToGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 395672600,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.loginToTheApplication()"
 });
 formatter.result({
-  "duration": 20619941700,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "FolderStepDef.movingToFolderPage()"
 });
 formatter.result({
-  "duration": 8290580300,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -508,16 +472,13 @@ formatter.match({
   "location": "FolderStepDef.createDocumentFolderInside(String)"
 });
 formatter.result({
-  "duration": 1891391000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.logoutTheApplication()"
 });
 formatter.result({
-  "duration": 40076266500,
-  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(Folder.feature:11)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.scenario({
   "line": 13,
@@ -561,44 +522,37 @@ formatter.match({
   "location": "LoginStepDef.openGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 208859700,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.goToGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 426744300,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.loginToTheApplication()"
 });
 formatter.result({
-  "duration": 20604074000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "FolderStepDef.movingToFolderPage()"
 });
 formatter.result({
-  "duration": 8688879600,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "FolderStepDef.createParentFolder()"
 });
 formatter.result({
-  "duration": 1369713300,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.logoutTheApplication()"
 });
 formatter.result({
-  "duration": 52986531200,
-  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(Folder.feature:19)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.scenario({
   "line": 22,
@@ -648,29 +602,25 @@ formatter.match({
   "location": "LoginStepDef.openGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 327683300,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.goToGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 406297700,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.loginToTheApplication()"
 });
 formatter.result({
-  "duration": 20821169500,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "FolderStepDef.movingToFolderPage()"
 });
 formatter.result({
-  "duration": 8753619100,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -682,16 +632,13 @@ formatter.match({
   "location": "FolderStepDef.createDocumentFolderInside(String)"
 });
 formatter.result({
-  "duration": 1501726500,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.logoutTheApplication()"
 });
 formatter.result({
-  "duration": 52811074500,
-  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(Folder.feature:28)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.uri("IndexGroup.feature");
 formatter.feature({
@@ -764,65 +711,55 @@ formatter.match({
   "location": "LoginStepDef.openGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 359159300,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.goToGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 478950200,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.loginToTheApplication()"
 });
 formatter.result({
-  "duration": 21095120100,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "IndexGroupStepDef.movingToIndexGroupPage()"
 });
 formatter.result({
-  "duration": 113879246500,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "IndexGroupStepDef.clickNewButtonToCreateNewIndexGroup()"
 });
 formatter.result({
-  "duration": 3949614000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "IndexGroupStepDef.typeIndexName()"
 });
 formatter.result({
-  "duration": 196896000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "IndexGroupStepDef.saveAndProvideNecessaryDetails()"
 });
 formatter.result({
-  "duration": 7453382200,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "IndexGroupStepDef.saveAndVerifyCreatedIndexGroup()"
 });
 formatter.result({
-  "duration": 61447076900,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.logoutTheApplication()"
 });
 formatter.result({
-  "duration": 31052968900,
-  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(IndexGroup.feature:13)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.uri("Login.feature");
 formatter.feature({
@@ -875,15 +812,13 @@ formatter.match({
   "location": "LoginStepDef.openGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 13898286800,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.goToGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 525087800,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -895,23 +830,19 @@ formatter.match({
   "location": "LoginStepDef.checkingLogingPageTitleIs(String)"
 });
 formatter.result({
-  "duration": 16474200,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.loginToTheApplication()"
 });
 formatter.result({
-  "duration": 21541153000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.logoutTheApplication()"
 });
 formatter.result({
-  "duration": 31021736200,
-  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(Login.feature:9)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.uri("MyQueue.feature");
 formatter.feature({
@@ -1115,29 +1046,25 @@ formatter.match({
   "location": "LoginStepDef.openGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 481079300,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.goToGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 742948100,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.loginToTheApplication()"
 });
 formatter.result({
-  "duration": 21033153700,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "MyQueueStepDef.enterIntoMyQueuePage()"
 });
 formatter.result({
-  "duration": 4101342200,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -1149,22 +1076,19 @@ formatter.match({
   "location": "MyQueueStepDef.selectFromTheDropdown(String)"
 });
 formatter.result({
-  "duration": 112550700,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "MyQueueStepDef.enterInsideAnyOneFromTheDisplayedList()"
 });
 formatter.result({
-  "duration": 7861448500,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "MyQueueStepDef.scrollDownToTheStatusDropdown()"
 });
 formatter.result({
-  "duration": 27423000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -1176,15 +1100,13 @@ formatter.match({
   "location": "MyQueueStepDef.selectFromTheDropdown(String)"
 });
 formatter.result({
-  "duration": 181942900,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "MyQueueStepDef.saveToComeToMyQueuePage()"
 });
 formatter.result({
-  "duration": 3885507300,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -1196,23 +1118,19 @@ formatter.match({
   "location": "MyQueueStepDef.selectFromTheDropdown(String)"
 });
 formatter.result({
-  "duration": 181880400,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "MyQueueStepDef.verifyTheStatusOfTheChangedDocument()"
 });
 formatter.result({
-  "duration": 1564140500,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.logoutTheApplication()"
 });
 formatter.result({
-  "duration": 31109609300,
-  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(MyQueue.feature:16)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.scenario({
   "line": 22,
@@ -1301,29 +1219,25 @@ formatter.match({
   "location": "LoginStepDef.openGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 449353900,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.goToGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 434644500,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.loginToTheApplication()"
 });
 formatter.result({
-  "duration": 20676394700,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "MyQueueStepDef.enterIntoMyQueuePage()"
 });
 formatter.result({
-  "duration": 4223249500,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -1335,22 +1249,19 @@ formatter.match({
   "location": "MyQueueStepDef.selectFromTheDropdown(String)"
 });
 formatter.result({
-  "duration": 159722400,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "MyQueueStepDef.enterInsideAnyOneFromTheDisplayedList()"
 });
 formatter.result({
-  "duration": 7819805300,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "MyQueueStepDef.scrollDownToTheStatusDropdown()"
 });
 formatter.result({
-  "duration": 25182200,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -1362,15 +1273,13 @@ formatter.match({
   "location": "MyQueueStepDef.selectFromTheDropdown(String)"
 });
 formatter.result({
-  "duration": 364765700,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "MyQueueStepDef.saveToComeToMyQueuePage()"
 });
 formatter.result({
-  "duration": 3864688200,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -1382,23 +1291,19 @@ formatter.match({
   "location": "MyQueueStepDef.selectFromTheDropdown(String)"
 });
 formatter.result({
-  "duration": 374190900,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "MyQueueStepDef.verifyTheStatusOfTheChangedDocument()"
 });
 formatter.result({
-  "duration": 1574540200,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.logoutTheApplication()"
 });
 formatter.result({
-  "duration": 30975113100,
-  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(MyQueue.feature:16)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.uri("Reports.feature");
 formatter.feature({
@@ -1553,29 +1458,25 @@ formatter.match({
   "location": "LoginStepDef.openGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 1459545400,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.goToGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 647361300,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.loginToTheApplication()"
 });
 formatter.result({
-  "duration": 21094954800,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ReportsStepDef.movingToReportsPage()"
 });
 formatter.result({
-  "duration": 3734167400,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -1587,30 +1488,25 @@ formatter.match({
   "location": "ReportsStepDef.selectFromDropdown(String)"
 });
 formatter.result({
-  "duration": 3129284400,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ReportsStepDef.generateReportByFillingNecessaryDetails()"
 });
 formatter.result({
-  "duration": 5577366500,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ReportsStepDef.verifyReportLoadedInGrid()"
 });
 formatter.result({
-  "duration": 56407900,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.logoutTheApplication()"
 });
 formatter.result({
-  "duration": 31060834900,
-  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(Reports.feature:12)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.scenario({
   "line": 16,
@@ -1673,29 +1569,25 @@ formatter.match({
   "location": "LoginStepDef.openGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 271813900,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.goToGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 431030700,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.loginToTheApplication()"
 });
 formatter.result({
-  "duration": 20958796300,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ReportsStepDef.movingToReportsPage()"
 });
 formatter.result({
-  "duration": 3141690200,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -1707,23 +1599,19 @@ formatter.match({
   "location": "ReportsStepDef.selectFromDropdown(String)"
 });
 formatter.result({
-  "duration": 14564979600,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ReportsStepDef.generateReportByFillingNecessaryDetails()"
 });
 formatter.result({
-  "duration": 16215933700,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ReportsStepDef.verifyReportLoadedInGrid()"
 });
 formatter.result({
-  "duration": 30025068000,
-  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.dms.stepDefinitions.ReportsStepDef.verifyReportLoadedInGrid(ReportsStepDef.java:47)\r\n\tat ✽.And Verify report loaded in grid(Reports.feature:11)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.logoutTheApplication()"
@@ -1778,51 +1666,43 @@ formatter.match({
   "location": "LoginStepDef.openGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 685134800,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.goToGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 463126600,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.loginToTheApplication()"
 });
 formatter.result({
-  "duration": 21456254700,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ReportsStepDef.movingToReportsPage()"
 });
 formatter.result({
-  "duration": 4162473400,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ReportsStepDef.SelectBulkJobFromDropdown()"
 });
 formatter.result({
-  "duration": 3641359300,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "ReportsStepDef.verifyReportLoadedInGrid()"
 });
 formatter.result({
-  "duration": 21409600,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.logoutTheApplication()"
 });
 formatter.result({
-  "duration": 30716688100,
-  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(Reports.feature:27)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.uri("Settings.feature");
 formatter.feature({
@@ -1880,44 +1760,37 @@ formatter.match({
   "location": "LoginStepDef.openGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 193180600,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.goToGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 428315100,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.loginToTheApplication()"
 });
 formatter.result({
-  "duration": 20456431300,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "SettingsStepDef.movingToGeneralSettingPage()"
 });
 formatter.result({
-  "duration": 4085634600,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "SettingsStepDef.fillAllTheSettingDetailsAndUpdate()"
 });
 formatter.result({
-  "duration": 7235978900,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.logoutTheApplication()"
 });
 formatter.result({
-  "duration": 31111904400,
-  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(Settings.feature:10)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.uri("Teams.feature");
 formatter.feature({
@@ -1975,44 +1848,37 @@ formatter.match({
   "location": "LoginStepDef.openGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 206303900,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.goToGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 357849800,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.loginToTheApplication()"
 });
 formatter.result({
-  "duration": 20935043500,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "TeamsStepDef.movingToAddTeamsPage()"
 });
 formatter.result({
-  "duration": 3829232700,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "TeamsStepDef.fillTeamDetailsAndSubmit()"
 });
 formatter.result({
-  "duration": 6901792300,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.logoutTheApplication()"
 });
 formatter.result({
-  "duration": 31054124400,
-  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(Teams.feature:10)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.uri("Users.feature");
 formatter.feature({
@@ -2070,44 +1936,37 @@ formatter.match({
   "location": "LoginStepDef.openGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 221972300,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.goToGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 449579700,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.loginToTheApplication()"
 });
 formatter.result({
-  "duration": 20781043500,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "UsersStepDef.movingToAddUsersPage()"
 });
 formatter.result({
-  "duration": 3822722700,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "UsersStepDef.fillAllTheDetailsAndSubmit()"
 });
 formatter.result({
-  "duration": 7922444200,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.logoutTheApplication()"
 });
 formatter.result({
-  "duration": 31122639700,
-  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(Users.feature:10)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.scenario({
   "line": 13,
@@ -2162,51 +2021,43 @@ formatter.match({
   "location": "LoginStepDef.openGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 193291200,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.goToGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 438325900,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.loginToTheApplication()"
 });
 formatter.result({
-  "duration": 21155012000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "UsersStepDef.movingToDepartmentUserPage()"
 });
 formatter.result({
-  "duration": 3774861000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "UsersStepDef.fillDepartmentNameAndSubmit()"
 });
 formatter.result({
-  "duration": 2994280400,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "UsersStepDef.deleteTheCreatedDepartment()"
 });
 formatter.result({
-  "duration": 3382543400,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.logoutTheApplication()"
 });
 formatter.result({
-  "duration": 32175508700,
-  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(Users.feature:20)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.uri("Workflow.feature");
 formatter.feature({
@@ -2279,64 +2130,54 @@ formatter.match({
   "location": "LoginStepDef.openGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 194523900,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.goToGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 418936100,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.loginToTheApplication()"
 });
 formatter.result({
-  "duration": 21043291600,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "WorkFlowStepDef.enterIntoWorkflowMasterPage()"
 });
 formatter.result({
-  "duration": 3241987500,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "WorkFlowStepDef.enterPlusIconToCreateNewWorkflow()"
 });
 formatter.result({
-  "duration": 113758600,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "WorkFlowStepDef.enterWorkflowName()"
 });
 formatter.result({
-  "duration": 211740800,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "WorkFlowStepDef.fillStepDetails()"
 });
 formatter.result({
-  "duration": 446925300,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "WorkFlowStepDef.saveWorkflowAndVerify()"
 });
 formatter.result({
-  "duration": 7777059100,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginStepDef.logoutTheApplication()"
 });
 formatter.result({
-  "duration": 31128947400,
-  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(Workflow.feature:13)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 });

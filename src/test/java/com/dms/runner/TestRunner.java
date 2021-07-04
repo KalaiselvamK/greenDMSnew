@@ -32,7 +32,7 @@ import cucumber.api.java.Before;
 				,"html:target/cucumber-reports/cucumber-pretty"
 				,"json:target/cucumber-reports/CucumberTestReport.json"
 				, "com.vimalselvam.cucumber.listener.ExtentCucumberFormatter:target/html/ExtentReport.html"}
-		, dryRun = false
+		, dryRun = true
 				,monochrome=true
 				,snippets = SnippetType.CAMELCASE
 		) 

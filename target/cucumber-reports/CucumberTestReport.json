@@ -12,8 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 21327614200,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 6,
             "name": "Open Browser",
@@ -24,8 +23,7 @@
           },
           {
             "result": {
-              "duration": 1464408700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 7,
             "name": "Go to GreenDMS application",
@@ -36,8 +34,7 @@
           },
           {
             "result": {
-              "duration": 18859438600,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 8,
             "name": "Login to the application",
@@ -48,8 +45,7 @@
           },
           {
             "result": {
-              "duration": 17903319500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "Moving to Add Documents page",
@@ -60,8 +56,7 @@
           },
           {
             "result": {
-              "duration": 915213700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "Add single document to Unassigned Folder",
@@ -72,9 +67,7 @@
           },
           {
             "result": {
-              "duration": 45708109700,
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(AddDocuments.feature:11)\r\n",
-              "status": "failed"
+              "status": "skipped"
             },
             "line": 11,
             "name": "Logout the application",
@@ -95,8 +88,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1271514300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 15,
             "name": "Open Browser",
@@ -107,8 +99,7 @@
           },
           {
             "result": {
-              "duration": 469943500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 16,
             "name": "Go to GreenDMS application",
@@ -119,8 +110,7 @@
           },
           {
             "result": {
-              "duration": 20998274000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 17,
             "name": "Login to the application",
@@ -131,8 +121,7 @@
           },
           {
             "result": {
-              "duration": 16906336700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 18,
             "name": "Moving to Add Documents page",
@@ -143,8 +132,7 @@
           },
           {
             "result": {
-              "duration": 1541050400,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 19,
             "name": "Add single document to My Documents Folder",
@@ -155,9 +143,7 @@
           },
           {
             "result": {
-              "duration": 45751895300,
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(AddDocuments.feature:20)\r\n",
-              "status": "failed"
+              "status": "skipped"
             },
             "line": 20,
             "name": "Logout the application",
@@ -178,8 +164,7 @@
         "steps": [
           {
             "result": {
-              "duration": 162397100,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 24,
             "name": "Open Browser",
@@ -190,8 +175,7 @@
           },
           {
             "result": {
-              "duration": 506566000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 25,
             "name": "Go to GreenDMS application",
@@ -202,8 +186,7 @@
           },
           {
             "result": {
-              "duration": 20338513100,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 26,
             "name": "Login to the application",
@@ -214,8 +197,7 @@
           },
           {
             "result": {
-              "duration": 16602723300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 27,
             "name": "Moving to Add Documents page",
@@ -226,8 +208,7 @@
           },
           {
             "result": {
-              "duration": 2940024500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 28,
             "name": "Add single document to DMS Folder",
@@ -238,9 +219,7 @@
           },
           {
             "result": {
-              "duration": 46584320100,
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(AddDocuments.feature:29)\r\n",
-              "status": "failed"
+              "status": "skipped"
             },
             "line": 29,
             "name": "Logout the application",
@@ -267,8 +246,7 @@
         "steps": [
           {
             "result": {
-              "duration": 191023000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 33,
             "name": "Open Browser",
@@ -279,8 +257,7 @@
           },
           {
             "result": {
-              "duration": 593206400,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 34,
             "name": "Go to GreenDMS application",
@@ -291,8 +268,7 @@
           },
           {
             "result": {
-              "duration": 20751151800,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 35,
             "name": "Login to the application",
@@ -303,8 +279,7 @@
           },
           {
             "result": {
-              "duration": 17239096600,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 36,
             "name": "Moving to Add Documents page",
@@ -315,8 +290,7 @@
           },
           {
             "result": {
-              "duration": 1039528900,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 37,
             "name": "Add multiple documents to Unassigned Folder",
@@ -327,9 +301,7 @@
           },
           {
             "result": {
-              "duration": 46048576800,
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(AddDocuments.feature:38)\r\n",
-              "status": "failed"
+              "status": "skipped"
             },
             "line": 38,
             "name": "Logout the application",
@@ -366,8 +338,7 @@
         "steps": [
           {
             "result": {
-              "duration": 225633400,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 5,
             "name": "Open Browser",
@@ -378,8 +349,7 @@
           },
           {
             "result": {
-              "duration": 370234100,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 6,
             "name": "Go to GreenDMS application",
@@ -390,8 +360,7 @@
           },
           {
             "result": {
-              "duration": 29815400,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 7,
             "name": "Checking loging page title is \"GREENDMS - 4.0.0.19\"",
@@ -408,8 +377,7 @@
           },
           {
             "result": {
-              "duration": 20497437500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 8,
             "name": "Login to the application",
@@ -446,8 +414,7 @@
         "steps": [
           {
             "result": {
-              "duration": 115100600,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 6,
             "name": "Open Browser",
@@ -458,8 +425,7 @@
           },
           {
             "result": {
-              "duration": 395672600,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 7,
             "name": "Go to GreenDMS application",
@@ -470,8 +436,7 @@
           },
           {
             "result": {
-              "duration": 20619941700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 8,
             "name": "Login to the application",
@@ -482,8 +447,7 @@
           },
           {
             "result": {
-              "duration": 8290580300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "Moving to Folder page",
@@ -494,8 +458,7 @@
           },
           {
             "result": {
-              "duration": 1891391000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "Create Document Folder inside \"Repository\"",
@@ -512,9 +475,7 @@
           },
           {
             "result": {
-              "duration": 40076266500,
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(Folder.feature:11)\r\n",
-              "status": "failed"
+              "status": "skipped"
             },
             "line": 11,
             "name": "Logout the application",
@@ -535,8 +496,7 @@
         "steps": [
           {
             "result": {
-              "duration": 208859700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 14,
             "name": "Open Browser",
@@ -547,8 +507,7 @@
           },
           {
             "result": {
-              "duration": 426744300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 15,
             "name": "Go to GreenDMS application",
@@ -559,8 +518,7 @@
           },
           {
             "result": {
-              "duration": 20604074000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 16,
             "name": "Login to the application",
@@ -571,8 +529,7 @@
           },
           {
             "result": {
-              "duration": 8688879600,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 17,
             "name": "Moving to Folder page",
@@ -583,8 +540,7 @@
           },
           {
             "result": {
-              "duration": 1369713300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 18,
             "name": "Create Parent Folder",
@@ -595,9 +551,7 @@
           },
           {
             "result": {
-              "duration": 52986531200,
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(Folder.feature:19)\r\n",
-              "status": "failed"
+              "status": "skipped"
             },
             "line": 19,
             "name": "Logout the application",
@@ -618,8 +572,7 @@
         "steps": [
           {
             "result": {
-              "duration": 327683300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 23,
             "name": "Open Browser",
@@ -630,8 +583,7 @@
           },
           {
             "result": {
-              "duration": 406297700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 24,
             "name": "Go to GreenDMS application",
@@ -642,8 +594,7 @@
           },
           {
             "result": {
-              "duration": 20821169500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 25,
             "name": "Login to the application",
@@ -654,8 +605,7 @@
           },
           {
             "result": {
-              "duration": 8753619100,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 26,
             "name": "Moving to Folder page",
@@ -666,8 +616,7 @@
           },
           {
             "result": {
-              "duration": 1501726500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 27,
             "name": "Create Document Folder inside \"Parent Folder\"",
@@ -684,9 +633,7 @@
           },
           {
             "result": {
-              "duration": 52811074500,
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(Folder.feature:28)\r\n",
-              "status": "failed"
+              "status": "skipped"
             },
             "line": 28,
             "name": "Logout the application",
@@ -729,8 +676,7 @@
         "steps": [
           {
             "result": {
-              "duration": 359159300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 5,
             "name": "Open Browser",
@@ -741,8 +687,7 @@
           },
           {
             "result": {
-              "duration": 478950200,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 6,
             "name": "Go to GreenDMS application",
@@ -753,8 +698,7 @@
           },
           {
             "result": {
-              "duration": 21095120100,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 7,
             "name": "Login to the application",
@@ -765,8 +709,7 @@
           },
           {
             "result": {
-              "duration": 113879246500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 8,
             "name": "Moving to Index Group page",
@@ -777,8 +720,7 @@
           },
           {
             "result": {
-              "duration": 3949614000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "Click New button to create new index group",
@@ -789,8 +731,7 @@
           },
           {
             "result": {
-              "duration": 196896000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "Type Index Name",
@@ -801,8 +742,7 @@
           },
           {
             "result": {
-              "duration": 7453382200,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 11,
             "name": "Save and provide necessary details",
@@ -813,8 +753,7 @@
           },
           {
             "result": {
-              "duration": 61447076900,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 12,
             "name": "Save and verify created Index Group",
@@ -825,9 +764,7 @@
           },
           {
             "result": {
-              "duration": 31052968900,
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(IndexGroup.feature:13)\r\n",
-              "status": "failed"
+              "status": "skipped"
             },
             "line": 13,
             "name": "Logout the application",
@@ -864,8 +801,7 @@
         "steps": [
           {
             "result": {
-              "duration": 13898286800,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 5,
             "name": "Open Browser",
@@ -876,8 +812,7 @@
           },
           {
             "result": {
-              "duration": 525087800,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 6,
             "name": "Go to GreenDMS application",
@@ -888,8 +823,7 @@
           },
           {
             "result": {
-              "duration": 16474200,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 7,
             "name": "Checking loging page title is \"GREENDMS - 4.0.0.19\"",
@@ -906,8 +840,7 @@
           },
           {
             "result": {
-              "duration": 21541153000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 8,
             "name": "Login to the application",
@@ -918,9 +851,7 @@
           },
           {
             "result": {
-              "duration": 31021736200,
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(Login.feature:9)\r\n",
-              "status": "failed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "Logout the application",
@@ -957,8 +888,7 @@
         "steps": [
           {
             "result": {
-              "duration": 481079300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 5,
             "name": "Open Browser",
@@ -969,8 +899,7 @@
           },
           {
             "result": {
-              "duration": 742948100,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 6,
             "name": "Go to GreenDMS application",
@@ -981,8 +910,7 @@
           },
           {
             "result": {
-              "duration": 21033153700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 7,
             "name": "Login to the application",
@@ -993,8 +921,7 @@
           },
           {
             "result": {
-              "duration": 4101342200,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 8,
             "name": "Enter into MyQueue page",
@@ -1005,8 +932,7 @@
           },
           {
             "result": {
-              "duration": 112550700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "Select \"In Progress\" from the dropdown",
@@ -1026,8 +952,7 @@
           },
           {
             "result": {
-              "duration": 7861448500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "Enter inside any one from the displayed list",
@@ -1038,8 +963,7 @@
           },
           {
             "result": {
-              "duration": 27423000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 11,
             "name": "Scroll down to the Status dropdown",
@@ -1050,8 +974,7 @@
           },
           {
             "result": {
-              "duration": 181942900,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 12,
             "name": "Select \"Declined\" from the dropdown",
@@ -1071,8 +994,7 @@
           },
           {
             "result": {
-              "duration": 3885507300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 13,
             "name": "Save to come to MyQueue page",
@@ -1083,8 +1005,7 @@
           },
           {
             "result": {
-              "duration": 181880400,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 14,
             "name": "Select \"Declined\" from the dropdown",
@@ -1104,8 +1025,7 @@
           },
           {
             "result": {
-              "duration": 1564140500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 15,
             "name": "Verify the status of the changed document",
@@ -1116,9 +1036,7 @@
           },
           {
             "result": {
-              "duration": 31109609300,
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(MyQueue.feature:16)\r\n",
-              "status": "failed"
+              "status": "skipped"
             },
             "line": 16,
             "name": "Logout the application",
@@ -1145,8 +1063,7 @@
         "steps": [
           {
             "result": {
-              "duration": 449353900,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 5,
             "name": "Open Browser",
@@ -1157,8 +1074,7 @@
           },
           {
             "result": {
-              "duration": 434644500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 6,
             "name": "Go to GreenDMS application",
@@ -1169,8 +1085,7 @@
           },
           {
             "result": {
-              "duration": 20676394700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 7,
             "name": "Login to the application",
@@ -1181,8 +1096,7 @@
           },
           {
             "result": {
-              "duration": 4223249500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 8,
             "name": "Enter into MyQueue page",
@@ -1193,8 +1107,7 @@
           },
           {
             "result": {
-              "duration": 159722400,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "Select \"In Progress\" from the dropdown",
@@ -1214,8 +1127,7 @@
           },
           {
             "result": {
-              "duration": 7819805300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "Enter inside any one from the displayed list",
@@ -1226,8 +1138,7 @@
           },
           {
             "result": {
-              "duration": 25182200,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 11,
             "name": "Scroll down to the Status dropdown",
@@ -1238,8 +1149,7 @@
           },
           {
             "result": {
-              "duration": 364765700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 12,
             "name": "Select \"Completed\" from the dropdown",
@@ -1259,8 +1169,7 @@
           },
           {
             "result": {
-              "duration": 3864688200,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 13,
             "name": "Save to come to MyQueue page",
@@ -1271,8 +1180,7 @@
           },
           {
             "result": {
-              "duration": 374190900,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 14,
             "name": "Select \"Completed\" from the dropdown",
@@ -1292,8 +1200,7 @@
           },
           {
             "result": {
-              "duration": 1574540200,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 15,
             "name": "Verify the status of the changed document",
@@ -1304,9 +1211,7 @@
           },
           {
             "result": {
-              "duration": 30975113100,
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(MyQueue.feature:16)\r\n",
-              "status": "failed"
+              "status": "skipped"
             },
             "line": 16,
             "name": "Logout the application",
@@ -1349,8 +1254,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1459545400,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 5,
             "name": "Open Browser",
@@ -1361,8 +1265,7 @@
           },
           {
             "result": {
-              "duration": 647361300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 6,
             "name": "Go to GreenDMS application",
@@ -1373,8 +1276,7 @@
           },
           {
             "result": {
-              "duration": 21094954800,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 7,
             "name": "Login to the application",
@@ -1385,8 +1287,7 @@
           },
           {
             "result": {
-              "duration": 3734167400,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 8,
             "name": "Moving to Reports page",
@@ -1397,8 +1298,7 @@
           },
           {
             "result": {
-              "duration": 3129284400,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "Select \"Access History\" from dropdown",
@@ -1418,8 +1318,7 @@
           },
           {
             "result": {
-              "duration": 5577366500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "Generate report by filling necessary details",
@@ -1430,8 +1329,7 @@
           },
           {
             "result": {
-              "duration": 56407900,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 11,
             "name": "Verify report loaded in grid",
@@ -1442,9 +1340,7 @@
           },
           {
             "result": {
-              "duration": 31060834900,
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(Reports.feature:12)\r\n",
-              "status": "failed"
+              "status": "skipped"
             },
             "line": 12,
             "name": "Logout the application",
@@ -1471,8 +1367,7 @@
         "steps": [
           {
             "result": {
-              "duration": 271813900,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 5,
             "name": "Open Browser",
@@ -1483,8 +1378,7 @@
           },
           {
             "result": {
-              "duration": 431030700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 6,
             "name": "Go to GreenDMS application",
@@ -1495,8 +1389,7 @@
           },
           {
             "result": {
-              "duration": 20958796300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 7,
             "name": "Login to the application",
@@ -1507,8 +1400,7 @@
           },
           {
             "result": {
-              "duration": 3141690200,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 8,
             "name": "Moving to Reports page",
@@ -1519,8 +1411,7 @@
           },
           {
             "result": {
-              "duration": 14564979600,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "Select \"Document Folder Access History\" from dropdown",
@@ -1540,8 +1431,7 @@
           },
           {
             "result": {
-              "duration": 16215933700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "Generate report by filling necessary details",
@@ -1552,9 +1442,7 @@
           },
           {
             "result": {
-              "duration": 30025068000,
-              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.dms.stepDefinitions.ReportsStepDef.verifyReportLoadedInGrid(ReportsStepDef.java:47)\r\n\tat ✽.And Verify report loaded in grid(Reports.feature:11)\r\n",
-              "status": "failed"
+              "status": "skipped"
             },
             "line": 11,
             "name": "Verify report loaded in grid",
@@ -1592,8 +1480,7 @@
         "steps": [
           {
             "result": {
-              "duration": 685134800,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 21,
             "name": "Open Browser",
@@ -1604,8 +1491,7 @@
           },
           {
             "result": {
-              "duration": 463126600,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 22,
             "name": "Go to GreenDMS application",
@@ -1616,8 +1502,7 @@
           },
           {
             "result": {
-              "duration": 21456254700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 23,
             "name": "Login to the application",
@@ -1628,8 +1513,7 @@
           },
           {
             "result": {
-              "duration": 4162473400,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 24,
             "name": "Moving to Reports page",
@@ -1640,8 +1524,7 @@
           },
           {
             "result": {
-              "duration": 3641359300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 25,
             "name": "Select Bulk Job from dropdown",
@@ -1652,8 +1535,7 @@
           },
           {
             "result": {
-              "duration": 21409600,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 26,
             "name": "Verify report loaded in grid",
@@ -1664,9 +1546,7 @@
           },
           {
             "result": {
-              "duration": 30716688100,
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(Reports.feature:27)\r\n",
-              "status": "failed"
+              "status": "skipped"
             },
             "line": 27,
             "name": "Logout the application",
@@ -1703,8 +1583,7 @@
         "steps": [
           {
             "result": {
-              "duration": 193180600,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 5,
             "name": "Open Browser",
@@ -1715,8 +1594,7 @@
           },
           {
             "result": {
-              "duration": 428315100,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 6,
             "name": "Go to GreenDMS application",
@@ -1727,8 +1605,7 @@
           },
           {
             "result": {
-              "duration": 20456431300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 7,
             "name": "Login to the application",
@@ -1739,8 +1616,7 @@
           },
           {
             "result": {
-              "duration": 4085634600,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 8,
             "name": "Moving to General Setting page",
@@ -1751,8 +1627,7 @@
           },
           {
             "result": {
-              "duration": 7235978900,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "Fill all the Setting details and Update",
@@ -1763,9 +1638,7 @@
           },
           {
             "result": {
-              "duration": 31111904400,
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(Settings.feature:10)\r\n",
-              "status": "failed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "Logout the application",
@@ -1802,8 +1675,7 @@
         "steps": [
           {
             "result": {
-              "duration": 206303900,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 5,
             "name": "Open Browser",
@@ -1814,8 +1686,7 @@
           },
           {
             "result": {
-              "duration": 357849800,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 6,
             "name": "Go to GreenDMS application",
@@ -1826,8 +1697,7 @@
           },
           {
             "result": {
-              "duration": 20935043500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 7,
             "name": "Login to the application",
@@ -1838,8 +1708,7 @@
           },
           {
             "result": {
-              "duration": 3829232700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 8,
             "name": "Moving to Add Teams page",
@@ -1850,8 +1719,7 @@
           },
           {
             "result": {
-              "duration": 6901792300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "Fill Team details and Submit",
@@ -1862,9 +1730,7 @@
           },
           {
             "result": {
-              "duration": 31054124400,
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(Teams.feature:10)\r\n",
-              "status": "failed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "Logout the application",
@@ -1901,8 +1767,7 @@
         "steps": [
           {
             "result": {
-              "duration": 221972300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 5,
             "name": "Open Browser",
@@ -1913,8 +1778,7 @@
           },
           {
             "result": {
-              "duration": 449579700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 6,
             "name": "Go to GreenDMS application",
@@ -1925,8 +1789,7 @@
           },
           {
             "result": {
-              "duration": 20781043500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 7,
             "name": "Login to the application",
@@ -1937,8 +1800,7 @@
           },
           {
             "result": {
-              "duration": 3822722700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 8,
             "name": "Moving to Add Users page",
@@ -1949,8 +1811,7 @@
           },
           {
             "result": {
-              "duration": 7922444200,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "Fill all the details and Submit",
@@ -1961,9 +1822,7 @@
           },
           {
             "result": {
-              "duration": 31122639700,
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(Users.feature:10)\r\n",
-              "status": "failed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "Logout the application",
@@ -1984,8 +1843,7 @@
         "steps": [
           {
             "result": {
-              "duration": 193291200,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 14,
             "name": "Open Browser",
@@ -1996,8 +1854,7 @@
           },
           {
             "result": {
-              "duration": 438325900,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 15,
             "name": "Go to GreenDMS application",
@@ -2008,8 +1865,7 @@
           },
           {
             "result": {
-              "duration": 21155012000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 16,
             "name": "Login to the application",
@@ -2020,8 +1876,7 @@
           },
           {
             "result": {
-              "duration": 3774861000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 17,
             "name": "Moving to Department User page",
@@ -2032,8 +1887,7 @@
           },
           {
             "result": {
-              "duration": 2994280400,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 18,
             "name": "Fill Department Name and Submit",
@@ -2044,8 +1898,7 @@
           },
           {
             "result": {
-              "duration": 3382543400,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 19,
             "name": "Delete the created Department",
@@ -2056,9 +1909,7 @@
           },
           {
             "result": {
-              "duration": 32175508700,
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(Users.feature:20)\r\n",
-              "status": "failed"
+              "status": "skipped"
             },
             "line": 20,
             "name": "Logout the application",
@@ -2101,8 +1952,7 @@
         "steps": [
           {
             "result": {
-              "duration": 194523900,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 5,
             "name": "Open Browser",
@@ -2113,8 +1963,7 @@
           },
           {
             "result": {
-              "duration": 418936100,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 6,
             "name": "Go to GreenDMS application",
@@ -2125,8 +1974,7 @@
           },
           {
             "result": {
-              "duration": 21043291600,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 7,
             "name": "Login to the application",
@@ -2137,8 +1985,7 @@
           },
           {
             "result": {
-              "duration": 3241987500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 8,
             "name": "Enter into Workflow master page",
@@ -2149,8 +1996,7 @@
           },
           {
             "result": {
-              "duration": 113758600,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "Enter plus icon to create new Workflow",
@@ -2161,8 +2007,7 @@
           },
           {
             "result": {
-              "duration": 211740800,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "Enter workflow name",
@@ -2173,8 +2018,7 @@
           },
           {
             "result": {
-              "duration": 446925300,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 11,
             "name": "Fill step details",
@@ -2185,8 +2029,7 @@
           },
           {
             "result": {
-              "duration": 7777059100,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 12,
             "name": "Save workflow and verify",
@@ -2197,9 +2040,7 @@
           },
           {
             "result": {
-              "duration": 31128947400,
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\ELCOT\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c2537d762975b6f0b75080baafad7fe3\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:92)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(Workflow.feature:13)\r\n",
-              "status": "failed"
+              "status": "skipped"
             },
             "line": 13,
             "name": "Logout the application",
