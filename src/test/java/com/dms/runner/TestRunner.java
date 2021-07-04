@@ -53,7 +53,6 @@ public class TestRunner extends TestBase implements IAnnotationTransformer {
 	}
 	//********************Multiple times same test*******************************	
 
-
 	@BeforeClass(alwaysRun = true)
 	public void setUpClass() {
 		testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
