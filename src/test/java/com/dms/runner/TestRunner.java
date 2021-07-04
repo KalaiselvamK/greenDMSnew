@@ -26,13 +26,13 @@ import cucumber.api.java.Before;
 @CucumberOptions(
 		features = ".\\src\\test\\java\\com\\dms\\features",
 		glue = {"com.dms.stepDefinitions"},
-		tags = "~@RepositoryFeature",
-//		tags = "@Folder",
+//		tags = "~@RepositoryFeature",
+		tags = "@Login",
 		plugin= {"pretty"
 				,"html:target/cucumber-reports/cucumber-pretty"
 				,"json:target/cucumber-reports/CucumberTestReport.json"
 				, "com.vimalselvam.cucumber.listener.ExtentCucumberFormatter:target/html/ExtentReport.html"}
-		, dryRun = true
+		, dryRun = false
 				,monochrome=true
 				,snippets = SnippetType.CAMELCASE
 		) 

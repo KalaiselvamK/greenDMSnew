@@ -1,4 +1,4 @@
-@LoginFeature
+@Login
 Feature: Login Feature
 
 Scenario: Check Login Functionality
