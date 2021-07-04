@@ -59,6 +59,7 @@ public class TestBase implements ICommon {
 
 	@Override
 	public void openURL(String url) {
+		logger.info("Launching url: "+ url);
 		driver.get(url);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h2/span")));
 	}	

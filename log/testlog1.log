@@ -2492,3 +2492,81 @@ Session ID: a8a0e9799647688cdd2cb6a08c3f3bb9
 2021-06-28 19:26:25,345 [main] INFO LoginStepDef - Entered into while block...
 2021-06-28 19:26:25,924 [main] INFO LoginStepDef - All waits are over
 2021-06-28 19:26:25,934 [main] INFO LoginStepDef - Logging out...
+2021-07-04 11:22:46,961 [TestNG-test=Test-1] INFO LoginStepDef - Exception in Browser set-up
+2021-07-04 11:22:47,223 [TestNG-test=Test-1] INFO LoginStepDef - org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: driver.version: ChromeDriver
+2021-07-04 11:26:50,136 [TestNG-test=Test-1] INFO LoginStepDef - Browser set-up completed
+2021-07-04 11:26:51,683 [TestNG-test=Test-1] INFO LoginStepDef - Checking title
+2021-07-04 11:26:51,745 [TestNG-test=Test-1] INFO LoginStepDef - Logging in...
+2021-07-04 11:27:10,567 [TestNG-test=Test-1] INFO LoginStepDef - Waiting for preloader...
+2021-07-04 11:27:13,397 [TestNG-test=Test-1] INFO LoginStepDef - Entered into while block...
+2021-07-04 11:27:14,334 [TestNG-test=Test-1] INFO LoginStepDef - All waits are over
+2021-07-04 11:27:14,361 [TestNG-test=Test-1] INFO LoginStepDef - Logging out...
+2021-07-04 11:33:05,188 [TestNG-test=Test-1] INFO LoginStepDef - Browser set-up completed
+2021-07-04 11:33:05,396 [TestNG-test=Test-1] INFO LoginStepDef - Launching url: https://103.219.205.36:80/
+2021-07-04 11:33:07,256 [TestNG-test=Test-1] INFO LoginStepDef - Checking title
+2021-07-04 11:33:07,283 [TestNG-test=Test-1] INFO LoginStepDef - Logging in...
+2021-07-04 11:33:10,708 [TestNG-test=Test-1] INFO LoginStepDef - Already logged in, so logging out and retrying...
+2021-07-04 11:33:13,029 [TestNG-test=Test-1] INFO LoginStepDef - Waiting for preloader...
+2021-07-04 11:33:32,475 [TestNG-test=Test-1] INFO LoginStepDef - Entered into while block...
+2021-07-04 11:33:33,387 [TestNG-test=Test-1] INFO LoginStepDef - All waits are over
+2021-07-04 11:33:33,437 [TestNG-test=Test-1] INFO LoginStepDef - Logging out...
+2021-07-04 12:04:08,934 [TestNG-test=Test-1] INFO LoginStepDef - Exception in Browser set-up
+2021-07-04 12:04:09,033 [TestNG-test=Test-1] INFO LoginStepDef - org.openqa.selenium.SessionNotCreatedException: session not created
+from timeout: Timed out receiving message from renderer: 600.000
+  (Session info: chrome=91.0.4472.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00672DB3+2502067]
+	Ordinal0 [0x0060C5B1+2082225]
+	Ordinal0 [0x00512498+1057944]
+	Ordinal0 [0x00504D2F+1002799]
+	Ordinal0 [0x00503D69+998761]
+	Ordinal0 [0x00504026+999462]
+	Ordinal0 [0x00503915+997653]
+	Ordinal0 [0x0050A54D+1025357]
+	Ordinal0 [0x005038D1+997585]
+	Ordinal0 [0x005047F6+1001462]
+	Ordinal0 [0x00503D69+998761]
+	Ordinal0 [0x00504026+999462]
+	Ordinal0 [0x00503915+997653]
+	Ordinal0 [0x0050977C+1021820]
+	Ordinal0 [0x005038D1+997585]
+	Ordinal0 [0x005047F6+1001462]
+	Ordinal0 [0x00503D69+998761]
+	Ordinal0 [0x00504026+999462]
+	Ordinal0 [0x00503915+997653]
+	Ordinal0 [0x004FF42D+980013]
+	Ordinal0 [0x005038D1+997585]
+	Ordinal0 [0x00503670+996976]
+	Ordinal0 [0x00503409+996361]
+	Ordinal0 [0x005136A0+1062560]
+	Ordinal0 [0x0055AA59+1354329]
+	Ordinal0 [0x0055967A+1349242]
+	Ordinal0 [0x00555BEB+1334251]
+	Ordinal0 [0x00532174+1188212]
+	Ordinal0 [0x00533009+1191945]
+	GetHandleVerifier [0x007EEC5C+1511084]
+	GetHandleVerifier [0x00898522+2205554]
+	GetHandleVerifier [0x006F3393+480739]
+	GetHandleVerifier [0x006F2579+477129]
+	Ordinal0 [0x00611E5D+2104925]
+	Ordinal0 [0x006163F8+2122744]
+	Ordinal0 [0x00616537+2123063]
+	Ordinal0 [0x0061EE53+2158163]
+	BaseThreadInitThunk [0x75CFFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77867A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77867A6E+238]
+
+2021-07-04 17:25:29,559 [TestNG-test=Test-1] INFO LoginStepDef - Browser set-up completed
+2021-07-04 17:25:29,997 [TestNG-test=Test-1] INFO LoginStepDef - Launching url: https://103.219.205.36:80/
+2021-07-04 17:25:33,194 [TestNG-test=Test-1] INFO LoginStepDef - Checking title
+2021-07-04 17:25:33,614 [TestNG-test=Test-1] INFO LoginStepDef - Logging in...
+2021-07-04 17:25:54,447 [TestNG-test=Test-1] INFO LoginStepDef - Waiting for preloader...
+2021-07-04 17:25:56,280 [TestNG-test=Test-1] INFO LoginStepDef - Entered into while block...
+2021-07-04 17:25:57,126 [TestNG-test=Test-1] INFO LoginStepDef - All waits are over
+2021-07-04 17:25:57,170 [TestNG-test=Test-1] INFO LoginStepDef - Logging out...
