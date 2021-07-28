@@ -3,6 +3,7 @@ package com.dms.stepDefinitions;
 import org.testng.Assert;
 import com.dms.base.TestBase;
 
+import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -15,6 +16,12 @@ import cucumber.api.java.en.When;
 
 
 public class LoginStepDef extends TestBase{
+	
+	@Before
+	public void add()
+	{
+		
+	}
 
 	@Given("^Open Browser$")
 	public void openGreeDMSApplication(){

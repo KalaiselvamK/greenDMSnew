@@ -1,47 +1,62 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("AddDocuments.feature");
 formatter.feature({
   "line": 2,
-  "name": "Login Feature",
+  "name": "Testing Add Documents Feature",
   "description": "",
-  "id": "login-feature",
+  "id": "testing-add-documents-feature",
   "keyword": "Feature",
   "tags": [
     {
       "line": 1,
-      "name": "@Login"
+      "name": "@AddDocuments"
     }
   ]
 });
+formatter.before({
+  "duration": 10568500,
+  "status": "passed"
+});
 formatter.scenario({
-  "line": 4,
-  "name": "Check Login Functionality",
+  "line": 23,
+  "name": "Adding Single Document to DMS Folder",
   "description": "",
-  "id": "login-feature;check-login-functionality",
+  "id": "testing-add-documents-feature;adding-single-document-to-dms-folder",
   "type": "scenario",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 22,
+      "name": "@selectedScenario"
+    }
+  ]
 });
 formatter.step({
-  "line": 5,
+  "line": 24,
   "name": "Open Browser",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 6,
+  "line": 25,
   "name": "Go to GreenDMS application",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 7,
-  "name": "Checking loging page title is \"GREENDMS - 4.0.0.19\"",
-  "keyword": "When "
+  "line": 26,
+  "name": "Login to the application",
+  "keyword": "Then "
 });
 formatter.step({
-  "line": 8,
-  "name": "Login to the application",
+  "line": 27,
+  "name": "Moving to Add Documents page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 28,
+  "name": "Add single document to DMS Folder",
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,
+  "line": 29,
   "name": "Logout the application",
   "keyword": "And "
 });
@@ -49,41 +64,42 @@ formatter.match({
   "location": "LoginStepDef.openGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 58185775801,
+  "duration": 13401810900,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDef.goToGreeDMSApplication()"
 });
 formatter.result({
-  "duration": 3174502599,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "GREENDMS - 4.0.0.19",
-      "offset": 31
-    }
-  ],
-  "location": "LoginStepDef.checkingLogingPageTitleIs(String)"
-});
-formatter.result({
-  "duration": 413416599,
+  "duration": 3315876700,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDef.loginToTheApplication()"
 });
 formatter.result({
-  "duration": 22652525399,
+  "duration": 11902900700,
   "status": "passed"
+});
+formatter.match({
+  "location": "AddDocumentsStepDef.movingToAddDocumentsPage()"
+});
+formatter.result({
+  "duration": 5339468700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AddDocumentsStepDef.addSingleDocumentToDMSFolder()"
+});
+formatter.result({
+  "duration": 1074593300,
+  "error_message": "org.openqa.selenium.NoSuchElementException: Cannot locate option with index: 1\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.106\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.support.ui.Select.setSelectedByIndex(Select.java:297)\r\n\tat org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:172)\r\n\tat com.dms.pages.AddDocumentsPage.selectDocumentFolder(AddDocumentsPage.java:89)\r\n\tat com.dms.stepDefinitions.AddDocumentsStepDef.addSingleDocumentToDMSFolder(AddDocumentsStepDef.java:64)\r\n\tat ✽.And Add single document to DMS Folder(AddDocuments.feature:28)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "LoginStepDef.logoutTheApplication()"
 });
 formatter.result({
-  "duration": 31486703899,
-  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (efed1d524cf0c24e8b3d553a346e6e5c)] -\u003e xpath: //a[text()\u003d\u0027Logout\u0027]] (tried for 30 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SHARP\u0027, ip: \u0027192.168.1.103\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002713.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\WINDOWS\\TEMP\\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:58839}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: efed1d524cf0c24e8b3d553a346e6e5c\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat com.dms.base.TestBase.logout(TestBase.java:93)\r\n\tat com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)\r\n\tat ✽.And Logout the application(Login.feature:9)\r\n",
-  "status": "failed"
+  "status": "skipped"
+});
 });

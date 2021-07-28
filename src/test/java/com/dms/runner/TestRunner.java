@@ -1,10 +1,14 @@
 package com.dms.runner;
 
 import java.io.File;
+import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.IAnnotationTransformer;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -19,29 +23,32 @@ import cucumber.api.Scenario;
 import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
 import cucumber.api.SnippetType;
+import cucumber.api.java.After;
 import cucumber.api.java.Before;
 
 
-//@ExtendedCucumberOptions
+
 @CucumberOptions(
 		features = ".\\src\\test\\java\\com\\dms\\features",
 		glue = {"com.dms.stepDefinitions"},
 //		tags = "~@RepositoryFeature",
-		tags = "@Login",
+		tags = "@selectedScenario",
 		plugin= {"pretty"
 				,"html:target/cucumber-reports/cucumber-pretty"
 				,"json:target/cucumber-reports/CucumberTestReport.json"
 				, "com.vimalselvam.cucumber.listener.ExtentCucumberFormatter:target/html/ExtentReport.html"}
-		, dryRun = false
-				,monochrome=true
+				, dryRun = false
+				, monochrome=true
 				,snippets = SnippetType.CAMELCASE
 		) 
 
 public class TestRunner extends TestBase implements IAnnotationTransformer {
-
+	
 	Logger logger=Logger.getLogger(this.getClass().getSimpleName());
 
 	private TestNGCucumberRunner testNGCucumberRunner;
+	
+	
 
 
 	//********************Multiple times same test*******************************
@@ -68,11 +75,41 @@ public class TestRunner extends TestBase implements IAnnotationTransformer {
 	public void feature(CucumberFeatureWrapper cucumberFeature) throws Throwable{
 		testNGCucumberRunner.runCucumber(cucumberFeature.getCucumberFeature());
 	}
+	
+	
+	
+	
 	@DataProvider
 	public Object[][] features() {
 		return testNGCucumberRunner.provideFeatures();
 	}
-
+	
+	@After()
+	 public void afterScenario(Scenario scenario) {
+	 if (scenario.isFailed()) {
+		 
+		 logger.info("entered into @after method to get screenshot for failed testcases");
+	 String screenshotName = scenario.getName().replaceAll(" ", "_");
+	 try {
+	 //This takes a screenshot from the driver at save it to the specified location
+	 File sourcePath = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+	 
+	 //Building up the destination path for the screenshot to save
+	 //Also make sure to create a folder 'screenshots' with in the cucumber-report folder
+	 File destinationPath = new File(System.getProperty("user.dir") + "/screenshots/" + screenshotName + ".png");
+	 
+	 //Copy taken screenshot from source location to destination location
+	 FileUtils.copyFileToDirectory(sourcePath, destinationPath);   
+	 
+	 //This attach the specified screenshot to the test
+	 Reporter.addScreenCaptureFromPath(destinationPath.toString());
+	 } catch (IOException e) {
+	 } 
+	 }
+	 }
+	 
+	
+		
 	@AfterClass(alwaysRun = true)
 	public void tearDownClass() {
 		Reporter.loadXMLConfig(new File(".\\src\\test\\resources\\extent-config.xml"));

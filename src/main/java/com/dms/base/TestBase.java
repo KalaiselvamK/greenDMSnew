@@ -89,6 +89,7 @@ public class TestBase implements ICommon {
 		commonPreloadWait();
 //		commonPreloadWait();
 		logger.info("Logging out...");
+		driver.findElement(By.xpath("/html/body/div[3]/header/nav/div/ul/li[3]/a/i")).click();
 		WebElement element = driver.findElement(By.xpath("//a[text()='Logout']"));
 		wait.until(ExpectedConditions.elementToBeClickable(element)).click();
 		logger.info("Logged out...");
