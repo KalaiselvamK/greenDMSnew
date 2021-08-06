@@ -114,7 +114,7 @@ public class TestBase implements ICommon {
 		preloaderWait();
 		//return (T)landingClass.newInstance();  -- another way
 		try {
-			logger.info("Generic method called to navigate page:  "+landingClass.newInstance().getClass().getName());
+			logger.info("Generic method called to navigate page:  "+landingClass.getDeclaredConstructor().newInstance().getClass().getName());
 			return landingClass.getDeclaredConstructor().newInstance();
 		}
 		catch (Exception e) 
@@ -132,7 +132,7 @@ public class TestBase implements ICommon {
 		preloaderWait();
 		//return (T)landingClass.newInstance();  -- another way
 		try {
-			logger.info("Generic method called to navigate page:  "+landingClass.newInstance().getClass().getName());
+			logger.info("Generic method called to navigate page:  "+landingClass.getDeclaredConstructor().newInstance().getClass().getName());
 			return landingClass.getDeclaredConstructor().newInstance();
 		}
 		catch (Exception e) 

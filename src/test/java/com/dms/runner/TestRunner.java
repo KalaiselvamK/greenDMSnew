@@ -31,8 +31,8 @@ import cucumber.api.java.Before;
 @CucumberOptions(
 		features = ".\\src\\test\\java\\com\\dms\\features",
 		glue = {"com.dms.stepDefinitions"},
-//		tags = "~@RepositoryFeature",
-		tags = "@selectedScenario",
+		tags = "~@RepositoryFeature",
+//		tags = "@selectedScenario",
 		plugin= {"pretty"
 				,"html:target/cucumber-reports/cucumber-pretty"
 				,"json:target/cucumber-reports/CucumberTestReport.json"
